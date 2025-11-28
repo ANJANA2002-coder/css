@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Announcement Section</title>
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .notice-box {
+        width: 50%;
+        margin: auto;
+        background: #f4f4f4;
+        padding: 20px;
+        position: relative;   /* For absolute badge */
+        overflow: scroll; 
+        clear: none; 
+        height: auto;     /* Enables scroll if content overflows */
+    }
+
+    .notice-box img {
+        float: left;
+        width: 120px;
+        height: 120px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        
+    }
+
+    /* Decorative badge */
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: crimson;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    /* Clear float */
+    .clear {
+        clear: both;
+    }
+</style>
+</head>
+<body>
+
+<h1>Important Notice</h1>
+
+<div class="notice-box">
+    <span class="badge">New</span>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJpZTUJPs6L-qcvOtOV12uT2AQ4nFskgwRJnStq2nsx94uZF0bI_tUcoxIqREWgJIARGo&usqp=CAU" alt="Notice Image">
+
+    <p>
+        This is to inform all students, parents, and guardians that the school will remain closed on Friday, 12th December 2025, due to essential campus maintenance and safety inspections. During this time, the maintenance team will be conducting important electrical and structural work, and access to the school premises will be restricted for everyone’s safety. Regular classes will resume on Monday, 15th December 2025, following the usual timetable. Students are kindly requested to keep track of any updates posted on the school website and complete any pending classwork or preparations for the upcoming mid-term assessments. For urgent academic or administrative assistance, you may contact your respective class teachers or the school office during working hours. We appreciate your understanding and cooperation as we work to ensure a safe and comfortable learning environment for all.
+    </p>
+
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>
