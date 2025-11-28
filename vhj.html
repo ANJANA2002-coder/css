@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Card</title>
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwmbGqMM7AmovQsANNxMl4Xkiau-u-BG_6IQ&s);
+    background-size: cover;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #083097;
+    color: rgb(247, 242, 242);
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-size: xx-large;
+}
+
+
+.container {
+    margin-top: 90px;      
+    border: 3px solid hsl(0, 31%, 26%);
+    padding: 20px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;         
+    overflow: auto;      
+    position: relative; 
+    background-color: #9fb4f4;
+     
+}
+
+.profile-img {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+    border: 1px solid #892727;
+}
+
+
+.vertical-line {
+    border-left: 2px solid rgb(56, 50, 50);
+    height: 130px;
+    margin-left: 130px; 
+    position: absolute;
+    top: 20px;
+}
+
+.contact-box {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border-radius: 5pt ;
+    font-size: x-small;
+    background-color: rgb(48, 102, 218);
+    font-weight: 600;
+    color: hsl(180, 14%, 93%);
+}
+
+
+.name { font-size: 20px; font-weight: bold; }
+.title { font-size: 14px; color: #555; }
+.desc { margin-top: 10px;
+     font-size: 14px;
+     overflow: scroll;
+    font-style: oblique;
+color: #181616;}
+
+</style>
+</head>
+<body>
+
+<div class="header">Company Contact Card</div>
+
+<div class="container">
+
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJFF7hsWCh8aYQNrBXKA3RpKFor0pcsetg9w&s" class="profile-img">
+
+    <div class="vertical-line"></div>
+
+    
+    <div class="contact-box">
+        <div>Phone: 0000000000</div>
+        <div>Email: demo@example.com</div>
+    </div>
+
+    <!-- Text content beside image -->
+    <div class="name">Sara J</div>
+    <div class="title">Senior Developer</div>
+    <div class="desc">
+        Sara is a motivated and skilled professional who plays an important role in the company’s daily operations. She demonstrates excellent analytical thinking, works effectively under pressure, and manages her workload with great discipline. She builds strong relationships with her colleagues and is always ready to offer support when needed. Her ability to adapt quickly to new tasks and technologies shows her commitment to continuous learning. With her strong work ethic, consistent performance, and positive mindset, Anjana contributes significantly to the team's productivity and success.
+    </div>
+
+</div>
+
+</body>
+</html>
