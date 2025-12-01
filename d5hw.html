@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Blog Post</title>
+
+<style>
+    
+    .post {
+        width: 600px;
+        margin: 30px auto;
+        font-family: Arial, sans-serif;
+    }
+
+
+    .post p::first-line {
+        font-weight: bold;
+    }
+
+    
+    .post p::first-letter {
+        font-size: 2em;
+        color: darkred;
+    }
+
+    
+    .quote {
+        margin: 15px 0;
+        padding-left: 15px;
+        border-left: 3px solid #999;
+    }
+
+    .quote::before {
+        content: "“ ";
+        color: rgb(151, 18, 147);
+        font-size: 2.8em;
+    }
+
+    
+    a:link {
+        color: blue;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: rgb(25, 97, 116);
+    }
+
+    
+    h4 {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    
+    h4+h4{
+        color: rgb(9, 127, 94);
+        font-style: oblique;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="post">
+    <h2 class="title">The Beauty of the World</h2>
+    <h4 class="author">By: John Doe </h4>
+
+
+    <p>
+        The world is full of extraordinary places, cultures, and people.
+        Every part of the planet has something unique to offer.
+    </p>
+
+    <div class="quote">
+        Exploring the world helps us understand each other better.
+    </div>
+
+    <h4>Geography </h4>
+    <h4 >Climate</h4>
+
+    <h5><a href="hwd3.html">Read more</a></h5>
+
+
+
+</body>
+</html>
