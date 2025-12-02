@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+
+    background: #f2f2f2;
+  }
+
+  .featured {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d8bbbb;
+  }
+
+  .posts {
+    display: flex;
+    gap: 20px;
+    
+  }
+
+  .post {
+    background-color:#c3cccd;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 280px;
+  }
+
+  .post img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  
+  img[src$=".jpg"] {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+  a[href^="https://"] {
+    color: rgb(206, 71, 40);
+  }
+
+  
+  @media (max-width: 600px) {
+    .posts {
+      flex-direction: column;
+    }
+    body {
+      font-size: 14px;
+    }
+  }
+
+  
+  @media (orientation: portrait) {
+    .featured {
+      background: lightyellow;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<section class="featured">
+  <h2>Featured Blog</h2>
+
+  <div class="posts">
+
+    
+    <div class="post">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcWNyJ_9ySOkXFPrqXY6XJAKausnGEgvKQ0mmQp9s5liaG0k4yzJ_oWfvRdQ8D_ua3Jq1Mo89YdyXqSrgPykWAcBaxVm_CgfCts68padbbyav2ysPRdu917DmwUo_cCFB7_uR69ofSrd8x/s1600/BeingHappywithLessChest-AFlatGirlsDilemma.jpg" alt="Post 1">
+      <h3>The Beauty of Having Less</h3>
+      <p>Discover how decluttering your space can refresh your mind and spark creativity.</p>
+      <a href="https://example.com/css">Read More</a>
+    </div>
+
+    
+    <div class="post">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwC58uc5v_erVfS1lvt5WXMvHJZhp_nPajCg&s" alt="Post 2">
+      <h3>Ideas Brewed Fresh</h3> 
+      <p>  A warm cup, a quiet corner, and the magic of creativity—why coffee inspires thinkers.</p>
+      <a href="http://example.com/accessibility">Read More</a>
+    </div>
+
+   
+    <div class="post">
+      <img src="data:image/jpeg;base64,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" alt="Post 3">
+      <h3>Stories Born in Silence</h3>
+      <p>Explore why nights are the perfect time for imagination to unfold and words to come alive.</p>
+      <a href="https://example.com/js">Read More</a>
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
